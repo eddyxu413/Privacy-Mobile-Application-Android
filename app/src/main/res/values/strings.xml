@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FuzzyLocation</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="author">Di Xu</string>
+    <string name="supervisor">Richard Sinnott</string>
+    <string name="help_info">
+        It decides the degree of location obfuscation.\nFor more details, please read the about page.
+    </string>
+    <string name="help_title">Privacy Level</string>
+    <string name="about">
+        <![CDATA[
+        <html>
+             <head></head>
+             <body bgcolor="#e6f3f8">
+                <p style="text-align:justify;font-size:18px;">
+                This app aims to protect user’s geolocation privacy when sending tweets. Users login the app with their Twitter accounts and send tweets through this app. They can set their own prefer privacy level, then the app will send a corresponding obfuscated location to Twitter server instead of user’s accurate location.
+                </p>
+                <p style="text-align:justify;font-size:18px;">
+                <b>Privacy Level:</b></br> The value of Privacy Level determines the protection degree of user geolocation privacy.
+                The min value is zero, means no protection. The accurate location of user will be used. For other values larger than zero, an obfuscated
+                location will be generated randomly according to the Privacy Level. E.g. with Privacy Level setting to 5, the obfuscated
+                location is at most 5 km away from the accurate location.
+                </p>
+
+             </body>
+        </html>
+        ]]>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

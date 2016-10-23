@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/compose_tweet"
+    android:background="@color/composer_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    tools:context="unimelb.dix1.fuzzylocation.ComposeTweet">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:text="Privacy Level: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/privacyText"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/privacyLV"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:id="@+id/seekBar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/linearLayout" />
+
+    <TextView
+        android:text="Max"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxLV"
+        android:layout_alignBaseline="@+id/minLV"
+        android:layout_alignBottom="@+id/minLV"
+        android:layout_alignRight="@+id/seekBar"
+        android:layout_alignEnd="@+id/seekBar" />
+
+    <TextView
+        android:text="Min"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minLV"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/seekBar"
+        android:layout_alignStart="@+id/seekBar" />
+
+
+    <Button
+        android:text="Tweet"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:textColor="@color/tw__composer_white"
+        android:id="@+id/sendTweet"
+        android:background="@drawable/shape"
+        android:layout_below="@+id/tweetText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="What's happening?"
+        android:gravity="top|left"
+
+        android:maxLength="140"
+        android:textSize="18sp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tweetText"
+        android:layout_below="@+id/maxLV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/help_circle"
+        android:background="@null"
+        android:id="@+id/help"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignLeft="@+id/maxLV"
+        android:layout_alignStart="@+id/maxLV" />
+
+
+</RelativeLayout>

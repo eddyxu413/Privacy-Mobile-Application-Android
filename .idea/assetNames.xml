@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="assetNames">
+    <option name="mapping">
+      <map>
+        <entry key="tweet-button" value="tweet_button" />
+        <entry key="tweet-button1" value="tweet_button1" />
+        <entry key="twitter-logo" value="twitter_logo" />
+      </map>
+    </option>
+  </component>
+</project>
